@@ -1,0 +1,8 @@
+.filters {
+    margin-bottom: 20px;
+}
+
+.color-filter label,
+.price-filter label {
+    margin-right: 10px;
+}

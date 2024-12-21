@@ -1,0 +1,154 @@
+.app {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.filters {  
+    margin-right: 20px;
+}
+
+.sort-filter {
+    margin-top: 10px;
+}
+
+.color-filter label,
+.price-filter label {
+    margin-right: 10px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 1em;
+}
+
+.search-icon {
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.sort-filter {
+    margin: 15px 0;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.filter-button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: #f0f0f0;
+}
+
+.filter-button.active {
+    background-color: #e0e0e0;
+    border-color: #aaa;
+}
+
+.filter-title {
+    width: 138px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 7px 10px;
+    border-radius: 2px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.color-options {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    padding: 10px;
+}
+
+.color-option {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.color-option input {
+    margin-right: 5px;
+}
+
+.price-inputs {
+    width: 140px;
+    display: flex;
+    flex-direction: row;
+    background-color: #f7f7f7;
+    padding: 10px;
+}
+
+.price-input {
+    width: 50px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 1em;
+}
+
+.filters-and-products {
+    display: flex; 
+    margin-top: 15px; 
+}
+
+.total-products {
+    margin-top: 5px; 
+}
+
+.filters-container {
+    display: flex; 
+    flex-direction: column; 
+    margin-right: 20px; 
+}
+
+@media (max-width: 768px) {
+    .filters-and-products {
+        flex-direction: column; 
+    }
+
+    .filters-container {
+        margin-right: 0;
+        margin-bottom: 15px; 
+    }
+    
+    .color-options, .price-inputs {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .filter-buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-input {
+        font-size: 0.9em; 
+    }
+
+    .filter-title {
+        font-size: 0.9em; 
+    }
+}
